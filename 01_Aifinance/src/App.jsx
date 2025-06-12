@@ -1,12 +1,15 @@
 import Navbar from './components/Navbar.jsx'
+import Home from './components/Home.jsx'
+
 import './App.css'
 
 function App() {
   
   return (
-    <main className="bg-black">
+    <div className="text-white ">
       <Navbar/>
-    </main>
+      <Home/>
+    </div>
   )
 }
 
