@@ -13,30 +13,36 @@ body, html {
 
 
 .hero {
-  height: 100vh;
-  width:100vw ;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  /* height: 100vh; */
+  /* width:100vw ; */
+  /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
   color: white;
   padding: 0;
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 500;
+  /* z-index: 500; */
   top: 0;
   left: 0;
   margin: 0;
 }
 
 .hero-content {
+  margin-top: 240px; /* Push hero content down */
   text-align: center;
   max-width: 800px;
   padding: 0 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
+  
 }
 
 .hero-content h1 span {
@@ -50,6 +56,7 @@ body, html {
 }
 
 .hero-btn {
+  margin-bottom: 20px; /* Creates space between button and cards */
   display: inline-block;
   padding: 12px 28px;
   background-color: #00f7ff;
@@ -58,35 +65,51 @@ body, html {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
 }
 
 .hero-btn:hover {
-  background-color: #00d9e6;
+  transform: scale(1.05);
+  background-color: rgba(0, 247, 255, 0.655);
+  /* background-color: #00d9e6; */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); /* Blue neon glow */
 }
-
-
-
 
 .hero-features {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 20px; /* Space between cards */
-  margin-top: 40px;
+  gap: 40px; /* Space between cards */
+  margin-top: 80px;
   text-align: center;
 }
+
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3); }
+  50% { box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.6); }
+  100% { box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3); }
+}
+
+
+
 
 .feature-card {
   background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card */
   padding: 20px;
+  width: 350px;
   border-radius: 10px;
   font-size: 1.2rem;
   color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
+
 }
 
 .feature-card:hover {
   transform: scale(1.05);
+  /* color: rgb(0, 247, 255); */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); /* Blue neon glow */
   background-color: rgba(255, 255, 255, 0.2);
 }
 
