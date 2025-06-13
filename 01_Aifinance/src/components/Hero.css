@@ -20,6 +20,7 @@ html {
   color: white;
   padding: 0;
   position: relative;
+  background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +28,52 @@ html {
   top: 0;
   left: 0;
   margin: 0;
+
+
+
+
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero-content {
   margin-top: 240px;
