@@ -5,11 +5,11 @@ import Footer from './components/Footer.jsx'
 import './App.css'
 
 function App() {
-  
+
   return (
     <div className="text-white ">
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       {/* <Footer/> */}
     </div>
   )

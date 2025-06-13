@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  width:100%;
+  width: 100%;
 }
 
 
@@ -29,7 +30,8 @@ body, html {
 }
 
 .hero-content {
-  margin-top: 240px; /* Push hero content down */
+  margin-top: 240px;
+  /* Push hero content down */
   text-align: center;
   max-width: 800px;
   padding: 0 28px;
@@ -42,11 +44,16 @@ body, html {
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
-  
+  font-weight: bold;
 }
 
 .hero-content h1 span {
   color: #00f7ff;
+   transform: scale(1.05);
+  /* color: rgb(0, 247, 255); */
+  /* box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); */
+  /* Blue neon glow */
+  /* background-color: rgba(255, 255, 255, 0.2); */
 }
 
 .hero-content p {
@@ -56,7 +63,8 @@ body, html {
 }
 
 .hero-btn {
-  margin-bottom: 20px; /* Creates space between button and cards */
+  /* margin-bottom: 20px; */
+  /* Creates space between button and cards */
   display: inline-block;
   padding: 12px 28px;
   background-color: #00f7ff;
@@ -72,29 +80,45 @@ body, html {
   transform: scale(1.05);
   background-color: rgba(0, 247, 255, 0.655);
   /* background-color: #00d9e6; */
-  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); /* Blue neon glow */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
+  /* Blue neon glow */
 }
 
 .hero-features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
-  gap: 40px; /* Space between cards */
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 cards per row */
+  gap: 40px;
+  /* Space between cards */
   margin-top: 80px;
   text-align: center;
+  padding-top: 70px; /* Push content down */
+
 }
 
+.hero-features h1 {
+  /* display: flex; */
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
 
 @keyframes pulseGlow {
-  0% { box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3); }
-  50% { box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.6); }
-  100% { box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3); }
+  0% {
+    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.6);
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3);
+  }
 }
 
-
-
-
 .feature-card {
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent card */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent card */
   padding: 20px;
   width: 350px;
   border-radius: 10px;
@@ -109,18 +133,168 @@ body, html {
 .feature-card:hover {
   transform: scale(1.05);
   /* color: rgb(0, 247, 255); */
-  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); /* Blue neon glow */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
+  /* Blue neon glow */
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) {
   .hero-features {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on mobile */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row on mobile */
   }
 }
 
 @media (max-width: 480px) {
   .hero-features {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row on small screens */
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row on small screens */
   }
 }
+
+.features-heading {
+  width: 100%; 
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+  justify-content: center;
+  
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+  }
+}
+
+
+
+.hero-benefit {
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 cards per row */
+  gap: 40px;
+  /* Space between cards */
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 70px; /* Push content down */
+
+}
+
+.hero-benefit h1{
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+  
+}
+
+.hero-features-benefit h1 {
+  /* display: flex; */
+  font-size: 2.7rem;
+  margin-bottom: 20px;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.6);
+  }
+
+  100% {
+    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.3);
+  }
+}
+
+.feature-card-benefit {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent card */
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
+
+}
+
+.feature-card-benefit:hover {
+  transform: scale(1.05);
+  /* color: rgb(0, 247, 255); */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
+  /* Blue neon glow */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-features {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row on small screens */
+  }
+}
+
+.features-heading-benefit {
+  width: 100%; 
+  text-align: center;
+  /* font-weight: bold; */
+  font-size: 2.7rem;
+  margin-bottom: 45px;
+  justify-content: center;
+  
+}
+
+.features-grid-benefit {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 40px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
