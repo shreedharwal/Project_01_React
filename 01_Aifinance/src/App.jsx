@@ -10,7 +10,7 @@ function App() {
     <div className="text-white ">
       <Navbar />
       <Hero />
-      {/* <Footer/> */}
+      <Footer/> 
     </div>
   )
 }

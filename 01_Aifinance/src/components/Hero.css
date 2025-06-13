@@ -138,6 +138,14 @@ html {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+.feature-card h3{
+  font-size: 1.5rem;
+  color: #00f7ff;
+  font-weight: bold;
+}
+
+
 @media (max-width: 768px) {
   .hero-features {
     grid-template-columns: repeat(2, 1fr);
@@ -235,6 +243,7 @@ html {
 
 }
 
+
 .feature-card-benefit:hover {
   transform: scale(1.05);
   /* color: rgb(0, 247, 255); */
@@ -274,14 +283,21 @@ html {
   text-align: center;
 }
 
+
+.feature-card-benefit h3{
+  font-size: 1.5rem;
+  color: #00f7ff;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
-  .features-grid {
+  .features-grid-benefit {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   }
 }
 
 @media (max-width: 480px) {
-  .features-grid {
+  .features-grid-benefit {
     grid-template-columns: repeat(1, 1fr); /* 1 card per row */
   }
 }

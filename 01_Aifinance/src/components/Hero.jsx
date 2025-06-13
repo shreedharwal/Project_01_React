@@ -10,7 +10,7 @@ const Hero = () => {
           Smarter budgeting, expense insights, and financial forecasts
           Effortless tracking AI-driven insights, smarter finances
         </p>
-        <p>—all in one place.</p>
+        <p>—All in one place.</p>
         <a href="#features" className="hero-btn">Explore Features</a>
 
         <div className="hero-features">
@@ -52,28 +52,16 @@ const Hero = () => {
           </div>
           <div className="features-grid-benefit">
             <div className="feature-card-benefit">
-              <h3>💰 Smart Expense Analysis</h3>
-              <p>Track spending patterns and get AI-driven insights for better budgeting.</p>
+              <h3>💼 Working Professionals</h3>
+              <p>Optimize your salary, track expenses, and grow wealth.</p>
             </div>
             <div className="feature-card-benefit">
-              <h3>📈 AI-Driven Financial Forecasts</h3>
-              <p>Predict future financial trends using AI-powered analytics.</p>
+              <h3>🎓 Students</h3>
+              <p>Manage pocket money wisely and develop smart financial habits early.</p>
             </div>
             <div className="feature-card-benefit">
-              <h3>🚀 Automated Savings Insights</h3>
-              <p>Get personalized savings recommendations to optimize financial goals.</p>
-            </div>
-            <div className="feature-card-benefit">
-              <h3>🔍 Real-Time Budget Tracking</h3>
-              <p>Monitor expenses and balance budgets effortlessly with live tracking.</p>
-            </div>
-            <div className="feature-card-benefit">
-              <h3>🧠 Personalized Investment Suggestions</h3>
-              <p>Receive AI-backed investment tips tailored to your financial profile.</p>
-            </div>
-            <div className="feature-card-benefit">
-              <h3>📊 Visual Financial Dashboards</h3>
-              <p>Get interactive financial charts and reports for easier decision-making.</p>
+              <h3>👨‍👩‍👧‍👦 Families</h3>
+              <p>Plan household budgets efficiently with AI insights.</p>
             </div>
           </div>
         </div>

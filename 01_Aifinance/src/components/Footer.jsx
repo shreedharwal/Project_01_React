@@ -4,25 +4,14 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-logo">MyLogo</div>
-
-        <div className="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <div className="footer-socials">
-          <a href="#"><i className="fab fa-facebook-f"></i></a>
-          <a href="#"><i className="fab fa-twitter"></i></a>
-          <a href="#"><i className="fab fa-instagram"></i></a>
-          <a href="#"><i className="fab fa-linkedin-in"></i></a>
-        </div>
+      <div className="footer-content">
+        <p>© {new Date().getFullYear()} TrackNest. All rights reserved.</p>
+        <nav className="footer-nav">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Use</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
       </div>
-
-      <p className="footer-copy">© {new Date().getFullYear()} MyWebsite. All rights reserved.</p>
     </footer>
   );
 };
