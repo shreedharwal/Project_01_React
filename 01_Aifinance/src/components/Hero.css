@@ -27,53 +27,13 @@ html {
   /* z-index: 500; */
   top: 0;
   left: 0;
-  margin: 0;
-
-
-
-
-  
+  margin: 0; 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero {
+  animation: glowingBackground 5s infinite alternate;
+}
 
 .hero-content {
   margin-top: 240px;

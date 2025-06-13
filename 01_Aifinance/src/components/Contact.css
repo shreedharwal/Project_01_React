@@ -1,0 +1,188 @@
+.feature-contact {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Semi-transparent card */
+  margin-top: 50px;
+  padding: 20px;
+  width: 450px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
+
+}
+
+.feature-card-contact:hover {
+  transform: scale(1.05);
+  /* color: rgb(0, 247, 255); */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
+  /* Blue neon glow */
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.feature-contact h3{
+  font-size: 1.5rem;
+  text-align: center;
+  justify-content: center;
+  color: #00f7ff;
+  /* font-weight: bold; */
+}
+
+.features-grid-contact {
+  
+  text-align: center;
+  /* grid-template-columns: repeat(3, 1fr); 3 cards per row */
+  gap: 0px;
+  
+}
+
+@media (max-width: 768px) {
+  .features-grid-contact {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .features-grid-contact {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+    margin-top: 70px;
+    background: #0f0f0f;
+    color: white;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-container h2 span {
+    color: #00f7ff;
+}
+
+.contact-container p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #aaa;
+}
+
+.contact-form {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 1rem;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #bbb;
+}
+
+.contact-form button {
+    background-color: #00f7ff;
+    color: black;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00d9e6;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.6);
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
