@@ -25,6 +25,20 @@ html {
   top: 0;
   left: 0;
   margin: 0; 
+
+  background-color: #0f2027;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 8px,
+    transparent 10px,
+    transparent 20px
+  );
+
+
+
+
+
 }
 
 
