@@ -24,7 +24,7 @@ html {
   /* z-index: 500; */
   top: 0;
   left: 0;
-  margin: 0; 
+  margin: 0;
   animation: glowingBackground 5s infinite alternate;
 
   /* background-color: #0f2027;
@@ -48,55 +48,36 @@ html {
   overflow: hidden;
 } */
 
-
-
-
-
-
 /* ✅ Background pattern layer */
 .hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  
-  min-height: 40%; /* Adjust based on how much area you want */
+
+  min-height: 95vh;
+  /* Adjust based on how much area you want */
   background-color: #0f2027;
-  background-image: repeating-linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.05) 0px,
-    rgba(255, 255, 255, 0.05) 8px,
-    transparent 10px,
-    transparent 20px
-  );
+  background-image: repeating-linear-gradient(45deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 8px,
+      transparent 10px,
+      transparent 20px);
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+  .hero-bg {
+    height: 23%;
+    /* Adjust height for mobile */
+  }
+}
 
 .hero-content {
-  margin-top: 240px;/* Push hero content down */
+  margin-top: 240px;
+  /* Push hero content down */
   text-align: center;
-  max-width: 800px;
+  max-width: 700px;
   padding: 0 28px;
   display: flex;
   flex-direction: column;
@@ -112,7 +93,7 @@ html {
 
 .hero-content h1 span {
   color: #00f7ff;
-   transform: scale(1.05);
+  transform: scale(1.05);
   /* color: rgb(0, 247, 255); */
   /* box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8); */
   /* Blue neon glow */
@@ -135,8 +116,9 @@ html {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 1s ease, box-shadow 0.3s ease;
   animation: pulseGlow 3s infinite alternate;
+  transition: transform 1s ease;
 }
 
 .hero-btn:hover {
@@ -155,7 +137,8 @@ html {
   /* Space between cards */
   margin-top: 80px;
   text-align: center;
-  padding-top: 70px; /* Push content down */
+  padding-top: 70px;
+  /* Push content down */
 
 }
 
@@ -187,9 +170,10 @@ html {
   border-radius: 10px;
   /* font-size: 1rem; */
   color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), box-shadow 0.3s ease;
+  transition: transform 1s ease;
   animation: pulseGlow 3s infinite alternate;
+  /* transition: transform 1s ease, box-shadow 0.3s ease; */
 
 }
 
@@ -202,7 +186,7 @@ html {
 }
 
 
-.feature-card h3{
+.feature-card h3 {
   font-size: 1.5rem;
   color: #00f7ff;
   font-weight: bold;
@@ -224,52 +208,54 @@ html {
 }
 
 .features-heading {
-  width: 100%; 
+  width: 100%;
   text-align: center;
   /* font-weight: bold; */
   font-size: 2.7rem;
   margin-bottom: 40px;
   justify-content: center;
-  
+
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 cards per row */
   gap: 40px;
   text-align: center;
 }
 
 @media (max-width: 768px) {
   .features-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
   }
 }
 
 @media (max-width: 480px) {
   .features-grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row */
   }
 }
 
 
 
 .hero-benefit {
-  /* display: grid; */
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 cards per row */
-  gap: 40px;
-  /* Space between cards */
+  grid-template-columns: repeat(3, 1fr);/* 3 cards per row */
+  gap: 40px;/* Space between cards */
+  /* background: #1a1a1a; */
+  /* min-height: 1200px; */
   margin-top: 80px;
   text-align: center;
-  padding-top: 70px; /* Push content down */
+  padding-top: 70px;/* Push content down */
 
 }
 
-.hero-benefit h1{
+.hero-benefit h1 {
   font-size: 2.7rem;
   margin-bottom: 20px;
-  
+
 }
 
 .hero-features-benefit h1 {
@@ -300,9 +286,10 @@ html {
   border-radius: 10px;
   font-size: 1.2rem;
   color: white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), box-shadow 0.3s ease;
+  transition: transform 1s ease;
   animation: pulseGlow 3s infinite alternate;
+  /* transition: transform 1s ease, box-shadow 0.3s ease; */
 
 }
 
@@ -313,6 +300,7 @@ html {
   box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
   /* Blue neon glow */
   background-color: rgba(255, 255, 255, 0.2);
+
 }
 
 @media (max-width: 768px) {
@@ -330,24 +318,25 @@ html {
 }
 
 .features-heading-benefit {
-  width: 100%; 
+  width: 100%;
   text-align: center;
   /* font-weight: bold; */
   font-size: 2.7rem;
   margin-bottom: 45px;
   justify-content: center;
-  
+
 }
 
 .features-grid-benefit {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 cards per row */
   gap: 40px;
   text-align: center;
 }
 
 
-.feature-card-benefit h3{
+.feature-card-benefit h3 {
   font-size: 1.5rem;
   color: #00f7ff;
   font-weight: bold;
@@ -355,25 +344,14 @@ html {
 
 @media (max-width: 768px) {
   .features-grid-benefit {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row */
   }
 }
 
 @media (max-width: 480px) {
   .features-grid-benefit {
-    grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

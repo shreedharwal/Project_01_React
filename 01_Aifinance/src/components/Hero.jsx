@@ -6,16 +6,16 @@ const Hero = () => {
     <section className="hero" id="home">
 
       <div className="hero-pattern-wrapper"></div>
-        <div className="hero-bg"></div> {/* Background layer */}
-        <div className="hero-content">
-          <h1>Welcome to <span>TrackNest</span></h1>
-          <p>Your ultimate productivity and task tracking hub—smart, sleek, and simple.
-            Smarter budgeting, expense insights, and financial forecasts
-            Effortless tracking AI-driven insights, smarter finances
-          </p>
-          <p>—All in one place.</p>
-          <a href="#features" className="hero-btn">Explore Features</a>
-      
+      <div className="hero-bg"></div> {/* Background layer */}
+      <div className="hero-content">
+        <h1>Welcome to <span>TrackNest</span></h1>
+        <p>Your ultimate productivity and task tracking hub—smart, sleek, and simple.
+          Smarter budgeting, expense insights, and financial forecasts
+          Effortless tracking AI-driven insights, smarter finances
+        </p>
+        <p>—All in one place.</p>
+        <a href="#features" className="hero-btn">Explore Features</a>
+
 
         <div className="hero-features">
           <div className="features-heading">
@@ -49,8 +49,6 @@ const Hero = () => {
           </div>
         </div>
 
-
-
         <div className="hero-benefit">
           <div className="features-heading-benefit">
             <h1>Who Can<span> Benefit ?</span></h1>
@@ -70,21 +68,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
     </section>
   );

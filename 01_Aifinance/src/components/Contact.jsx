@@ -9,10 +9,6 @@ const Contact = () => {
                 <h2>Contact <span>TrackNest</span></h2>
                 <p>Have questions or feedback? We'd love to hear from you!</p>
 
-
-
-
-
                 <div className="features-grid-contact">
                     <div className="feature-contact">
                         <h3>📧 support@aifinancemanager.com</h3>

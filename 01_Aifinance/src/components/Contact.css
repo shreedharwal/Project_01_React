@@ -12,6 +12,7 @@ html {
   width: 100%;
 }
 
+
 .feature-contact {
   background-color: rgba(255, 255, 255, 0.1);
   min-width: 350px;/* Prevents shrinking too much */
@@ -71,7 +72,7 @@ html {
 
 .contact-section {
   margin-top: 70px;
-  background: #0f0f0f;
+  background: #1a1a1a;
   color: white;
   padding: 80px 20px;
   display: flex;
