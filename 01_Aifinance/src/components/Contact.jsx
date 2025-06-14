@@ -18,46 +18,12 @@ const Contact = () => {
                         <h3>📧 support@aifinancemanager.com</h3>
                     </div>
                     <div className="feature-contact">
-                        <h3>📞 +1 234 567 8900</h3>
+                        <h3>📍123 AI Street, New York, NY 10001</h3>
                     </div>
                     <div className="feature-contact">
-                        <h3>📍 123 AI Street, New York, NY 10001</h3>
-                    </div>                 
+                        <h3>📞 +1 234 567 8900</h3>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 <form className="contact-form">
                     <input type="text" name="name" placeholder="Your Name" required />
