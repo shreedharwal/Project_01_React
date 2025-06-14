@@ -16,7 +16,7 @@ const Navbar = () => {
       <ul className={isMobile ? "nav-links-mobile" : "nav-links"}>
         <li><a href="#home" className={activeLink === "#home" ? "active" : ""} onClick={() => handleLinkClick("#home")}>Home</a></li>
         <li><a href="#features" className={activeLink === "#features" ? "active" : ""} onClick={() => handleLinkClick("#features")}>Features</a></li>
-        <li><a href="#about" className={activeLink === "#about" ? "active" : ""} onClick={() => handleLinkClick("#about")}>Dashboard</a></li>
+        <li><a href="#dashboard" className={activeLink === "#dashboard" ? "active" : ""} onClick={() => handleLinkClick("#dashboard")}>Dashboard</a></li>
         <li><a href="#contact" className={activeLink === "#contact" ? "active" : ""} onClick={() => handleLinkClick("#contact")}>Contact</a></li>
       </ul>
 
