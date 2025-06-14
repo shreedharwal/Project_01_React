@@ -25,7 +25,42 @@ html {
   top: 0;
   left: 0;
   margin: 0; 
+  animation: glowingBackground 5s infinite alternate;
 
+  /* background-color: #0f2027;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 8px,
+    transparent 10px,
+    transparent 20px
+  ); */
+}
+
+
+
+
+/* Wrapper ensures content + background together */
+/* .hero-pattern-wrapper {
+  position: relative;
+  z-index: 0;
+  padding: 100px 20px 60px;
+  overflow: hidden;
+} */
+
+
+
+
+
+
+/* ✅ Background pattern layer */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  min-height: 40%; /* Adjust based on how much area you want */
   background-color: #0f2027;
   background-image: repeating-linear-gradient(
     45deg,
@@ -34,28 +69,39 @@ html {
     transparent 10px,
     transparent 20px
   );
-
-
-
-
-
 }
 
 
-.hero {
-  animation: glowingBackground 5s infinite alternate;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero-content {
-  margin-top: 240px;
-  /* Push hero content down */
+  margin-top: 240px;/* Push hero content down */
   text-align: center;
   max-width: 800px;
   padding: 0 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  z-index: 1;
 }
 
 .hero-content h1 {
