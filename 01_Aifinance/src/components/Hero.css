@@ -68,7 +68,9 @@ html {
 
 @media (max-width: 768px) {
   .hero-bg {
-    height: 23%;/* Adjust height for mobile */
+    height: 23%; /*Adjust height for mobile */
+    /* height: auto;
+    min-height: 130vh; */
   }
 }
 
@@ -123,20 +125,16 @@ html {
   transform: scale(1.05);
   background-color: rgba(0, 247, 255, 0.655);
   /* background-color: #00d9e6; */
-  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);
-  /* Blue neon glow */
+  box-shadow: 0px 0px 20px rgba(0, 247, 255, 0.8);/* Blue neon glow */
 }
 
 .hero-features {
   /* display: grid; */
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 cards per row */
-  gap: 40px;
-  /* Space between cards */
+  grid-template-columns: repeat(3, 1fr);/* 3 cards per row */
+  gap: 40px;/* Space between cards */
   margin-top: 80px;
   text-align: center;
-  padding-top: 70px;
-  /* Push content down */
+  padding-top: 70px;/* Push content down */
 
 }
 
@@ -161,12 +159,10 @@ html {
 }
 
 .feature-card {
-  background-color: rgba(255, 255, 255, 0.1);
-  /* Semi-transparent card */
+  background-color: rgba(255, 255, 255, 0.1);/* Semi-transparent card */
   padding: 20px;
   width: 350px;
-  border-radius: 10px;
-  /* font-size: 1rem; */
+  border-radius: 10px;/* font-size: 1rem; */
   color: white;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3), box-shadow 0.3s ease;
   transition: transform 1s ease;
