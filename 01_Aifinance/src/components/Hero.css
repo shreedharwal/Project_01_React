@@ -200,12 +200,12 @@ html {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
   .hero-features {
     grid-template-columns: repeat(1, 1fr);
     /* 1 card per row on small screens */
   }
-}
+}  
 
 .features-heading {
   width: 100%;
