@@ -2,8 +2,10 @@
     margin-top: 110px;
     background-color: #1c1c1c;
     color: #ffffff;
-    /* font-family: Arial, sans-serif; */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center your cards horizontally */
 
 }
 
@@ -15,25 +17,28 @@
 }
 
 .balance-overview,
-.recent-transactions {
+.recent-transactions,.spending-analytics, .Budget-Tracker, .Investment-Insights, .AI-Recommendations {
     background-color: #2c2c2c;
     border-radius: 10px;
+    width: 60 0px;
+    /* justify-content: center; */
+    align-items: center;
     margin: 20px 0;
     padding: 20px;
-    box-shadow: 0 0 15px #00f7ff;
+    /* box-shadow: 0 0 15px #00f7ff; */
     animation: pulseGlow 3s infinite alternate;
     transition: transform 1s ease, box-shadow 0.3s ease;
-}
+} 
 
 .balance-overview h2,
-.recent-transactions h2 {
+.recent-transactions h2 , .spending-analytics h2, .Budget-Tracker h2, .Investment-Insights h2, .AI-Recommendations h2{
     color: #00f7ff;
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
 
 .balance-item,
-.transaction-item {
+.transaction-item, .spending-charts, .budget-tracker, .investment-insights, .ai-recommendations{
     background-color: #3c3c3c;
     border-radius: 8px;
     margin: 12px 0;
@@ -45,15 +50,16 @@
 }
 
 .balance-item span,
-.transaction-item span {
+.transaction-item span, .spending-charts span, .budget-tracker span, .investment-insights span, .ai-recommendations span{
     margin-right: 12px;
     font-size: 1.5rem;
 }
 
 .transaction-item:hover,
-.balance-item:hover {
-    transform: scale(1.05);
+.balance-item:hover, .spending-charts:hover, .budget-tracker:hover, .investment-insights:hover, .ai-recommendations:hover {
+    transform: scale(1);
     background-color: #00f7ffa0;
+    
 }
 
 @media (max-width: 768px) {
@@ -62,13 +68,15 @@
     }
 
     .balance-overview,
-    .recent-transactions {
+    .recent-transactions, .spending-analytics, .Budget-Tracker, .Investment-Insights, .AI-Recommendations {
         padding: 15px;
     }
 
     .balance-item,
-    .transaction-item {
+    .transaction-item, .spending-charts, .budget-tracker, .investment-insights, .ai-recommendations {
         font-size: 1rem;
         padding: 12px;
     }
+
+
 }
