@@ -15,11 +15,12 @@ import axios from "axios"
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [question, setQuestion] = useState("")
+  const [answer, setAnswer] = useState("")
 
 
   async function generateAnswer() {
-    console.log("loading...")
+    setAnswer("loading...")
     const response = await axios({
       url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyAucIOMAk_DyTfzSsRG6f8WFHT6Nec_LS4",
       method: "post",
@@ -28,19 +29,23 @@ function App() {
           {
             "parts": [
               {
-                "text": "Explain how AI works in a few words"
+                "text": question
               }
             ]
           }
         ]
       }
     });
-    console.log(response)
+    setAnswer(response['data']['candidates'][0]['content']['parts'][0]['text']);
   }
   return (
     <>
       <h1>Chat AI</h1>
+      <textarea value={question}
+      onChange={(e)=> setQuestion(e.target.value)}
+      cols="50" rows='20'></textarea>
       <button onClick={generateAnswer}>Generate Ans</button>
+      <pre>{answer}</pre>
     </>
   )
 }
