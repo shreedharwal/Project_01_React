@@ -1,3 +1,123 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.chat-container {
+  background: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+.chat-title {
+  color: #b3b3b3;
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-input {
+  width: 90%;
+  max-width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: white;
+  resize: none;
+}
+
+.chat-button {
+  margin-top: 10px;
+  max-width: 370px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #6200ea;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+.chat-button:hover {
+  background: #3700b3;
+}
+
+.chat-response {
+  margin-top: 20px;
+  padding: 15px;
+  background: #333;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  max-height: 250px; /* Prevents content from shifting */
+  overflow-y: auto;  /* Scrollable if response is long */
+  white-space: pre-wrap;
+
+}
+
+.response-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  line-height: 1.5;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .chat-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .chat-input {
+    font-size: 14px;
+  }
+  .chat-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +159,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */

@@ -8,7 +8,7 @@
 // Axios enables you to cancel ongoing requests, which is useful for managing situations where a user navigates away from a page before a request completes. 
 // Axios allows you to intercept requests before they are sent and responses before they are handled, enabling tasks like adding authentication tokens or logging requests. 
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import axios from "axios"
@@ -38,15 +38,34 @@ function App() {
     });
     setAnswer(response['data']['candidates'][0]['content']['parts'][0]['text']);
   }
+
+
+  // Auto-scroll effect to bring response into view
+  useEffect(() => {
+    if (answer) {
+      document.getElementById("chat-response").scrollIntoView({ behavior: "smooth" });
+    }
+  }, [answer]);
+
+
   return (
-    <>
-      <h1>Chat AI</h1>
-      <textarea value={question}
-      onChange={(e)=> setQuestion(e.target.value)}
-      cols="50" rows='20'></textarea>
-      <button onClick={generateAnswer}>Generate Ans</button>
-      <pre>{answer}</pre>
-    </>
+    <div classname="chat-container">
+      <h1 classname='chat-title'>Chat AI</h1>
+      <div className="chat-box">
+
+        <textarea
+          value={question}
+          onChange={(e) => setQuestion(e.target.value)}
+          placeholder="Ask me anything..."
+          cols="40" rows='15'
+          className="chat-input"
+        />
+        <button onClick={generateAnswer} className='chat-button'>Generate</button>
+      </div>
+      <div id="chat-response" className="chat-response">
+        {answer && <p className="response-text">{answer}</p>}
+      </div>
+    </div>
   )
 }
 
